@@ -1,0 +1,32 @@
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 1.2rem 0;
+}
+
+.input {
+    padding: 0.8rem 1rem;
+    border: 2px solid lightgrey;
+    border-radius: 0.5em;
+    font-size: 1.2rem;
+
+    &_error {
+        border-color: #cc2900;
+    }
+}
+
+.label {
+    margin-bottom: 0.2rem;
+    align-self: flex-start;
+    font-size: 0.9rem;
+    color: darkgrey;
+}
+
+.error {
+    position: absolute;
+    bottom: 0;
+    align-self: flex-start;
+    color: #cc2900;
+    font-size: 0.8rem;
+}

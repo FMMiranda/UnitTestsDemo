@@ -1,0 +1,42 @@
+.form {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    min-width: 30rem;
+}
+
+.button {
+    align-self: center;
+    width: 9rem;
+    padding: 1rem 1.5rem;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    border: 0;
+    border-radius: 0.8em;
+    cursor: pointer;
+    background-color: #00b386;
+    color: white;
+
+    &:hover {
+        animation: rotation 0.5s;
+    }
+
+    &:disabled {
+        cursor: not-allowed;
+        animation: none;
+        opacity: 0.7;
+    }
+}
+
+@keyframes rotation {
+    25% {
+        transform: rotate(15deg);
+    }
+    75% {
+        transform: rotate(-7deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
